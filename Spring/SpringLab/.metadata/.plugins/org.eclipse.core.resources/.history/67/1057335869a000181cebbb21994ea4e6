@@ -1,0 +1,16 @@
+package com.spring.aop;
+
+import java.lang.reflect.Method;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.spring.service.LogService;
+
+public class MethodBeforeAdvice implements MethodBeforeAdvice{
+	@Autowired
+	LogService ls = null;
+	
+	public void before(Method method, Object[] args, Object target) throws Throwable{
+		
+	}
+}

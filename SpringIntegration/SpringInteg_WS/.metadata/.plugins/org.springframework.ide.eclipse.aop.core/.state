@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SpIntegMessagingTemplate"/>
+<aop-project name="SpringIntegrationdemo"/>
+<aop-project name="SpIntegChannel"/>
+<aop-project name="SpringIntegMessages"/>
+</aop-reference-model>

@@ -1,0 +1,7 @@
+package com.spring.main;
+
+public class AopLab1Main {
+	public static void main(String[] args) {
+		
+	}
+}

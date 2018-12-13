@@ -1,0 +1,941 @@
+25-Nov-2018 15:16:11.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.4
+25-Nov-2018 15:16:11.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 18 2018 19:42:17 UTC
+25-Nov-2018 15:16:11.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.4.0
+25-Nov-2018 15:16:11.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+25-Nov-2018 15:16:11.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.13.6
+25-Nov-2018 15:16:11.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+25-Nov-2018 15:16:11.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre
+25-Nov-2018 15:16:11.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_181-b13
+25-Nov-2018 15:16:11.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+25-Nov-2018 15:16:11.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/AnandKumar/Desktop/Study_Material/software/Tomcat9
+25-Nov-2018 15:16:11.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/AnandKumar/Desktop/Study_Material/software/Tomcat9
+25-Nov-2018 15:16:11.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/conf/logging.properties
+25-Nov-2018 15:16:11.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Nov-2018 15:16:11.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+25-Nov-2018 15:16:11.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Nov-2018 15:16:11.818 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+25-Nov-2018 15:16:11.818 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9
+25-Nov-2018 15:16:11.818 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9
+25-Nov-2018 15:16:11.818 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/temp
+25-Nov-2018 15:16:11.819 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/AnandKumar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+25-Nov-2018 15:16:12.010 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-Nov-2018 15:16:12.029 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+ org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:935)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:530)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:852)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:622)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:645)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:309)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:227)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1043)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:540)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:932)
+	... 13 more
+
+25-Nov-2018 15:16:12.031 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2018 15:16:12.038 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+25-Nov-2018 15:16:12.047 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 757 ms
+25-Nov-2018 15:16:12.087 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Nov-2018 15:16:12.087 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.4
+25-Nov-2018 15:16:12.095 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/docs]
+25-Nov-2018 15:16:12.506 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/docs] has finished in [410] ms
+25-Nov-2018 15:16:12.506 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/manager]
+25-Nov-2018 15:16:12.554 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/manager] has finished in [48] ms
+25-Nov-2018 15:16:12.555 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/examples]
+25-Nov-2018 15:16:13.154 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/examples] has finished in [600] ms
+25-Nov-2018 15:16:13.156 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/ROOT]
+25-Nov-2018 15:16:13.184 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/ROOT] has finished in [28] ms
+25-Nov-2018 15:16:13.184 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/host-manager]
+25-Nov-2018 15:16:13.211 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/host-manager] has finished in [27] ms
+25-Nov-2018 15:16:13.214 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2018 15:16:13.223 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1176 ms
+25-Nov-2018 15:17:30.056 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+25-Nov-2018 15:17:30.057 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+25-Nov-2018 15:17:30.057 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2018 15:17:30.113 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+25-Nov-2018 15:17:30.151 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2018 15:17:30.157 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+25-Nov-2018 15:17:30.158 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+25-Nov-2018 15:17:30.159 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2018 15:17:52.213 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.4
+25-Nov-2018 15:17:52.215 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 18 2018 19:42:17 UTC
+25-Nov-2018 15:17:52.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.4.0
+25-Nov-2018 15:17:52.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+25-Nov-2018 15:17:52.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.13.6
+25-Nov-2018 15:17:52.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+25-Nov-2018 15:17:52.217 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre
+25-Nov-2018 15:17:52.217 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_181-b13
+25-Nov-2018 15:17:52.217 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+25-Nov-2018 15:17:52.217 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/AnandKumar/Desktop/Study_Material/software/Tomcat9
+25-Nov-2018 15:17:52.217 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/AnandKumar/Desktop/Study_Material/software/Tomcat9
+25-Nov-2018 15:17:52.218 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/conf/logging.properties
+25-Nov-2018 15:17:52.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Nov-2018 15:17:52.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+25-Nov-2018 15:17:52.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Nov-2018 15:17:52.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+25-Nov-2018 15:17:52.220 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9
+25-Nov-2018 15:17:52.220 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9
+25-Nov-2018 15:17:52.220 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/temp
+25-Nov-2018 15:17:52.220 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/AnandKumar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+25-Nov-2018 15:17:52.390 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-Nov-2018 15:17:52.420 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+ org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:935)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:530)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:852)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:622)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:645)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:309)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:227)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1043)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:540)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:932)
+	... 13 more
+
+25-Nov-2018 15:17:52.422 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2018 15:17:52.431 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+25-Nov-2018 15:17:52.440 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 764 ms
+25-Nov-2018 15:17:52.473 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Nov-2018 15:17:52.474 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.4
+25-Nov-2018 15:17:52.481 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/docs]
+25-Nov-2018 15:17:52.855 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/docs] has finished in [373] ms
+25-Nov-2018 15:17:52.855 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/manager]
+25-Nov-2018 15:17:52.905 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/manager] has finished in [49] ms
+25-Nov-2018 15:17:52.905 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/examples]
+25-Nov-2018 15:17:53.266 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/examples] has finished in [361] ms
+25-Nov-2018 15:17:53.267 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/ROOT]
+25-Nov-2018 15:17:53.288 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/ROOT] has finished in [22] ms
+25-Nov-2018 15:17:53.289 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/host-manager]
+25-Nov-2018 15:17:53.313 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/host-manager] has finished in [24] ms
+25-Nov-2018 15:17:53.317 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2018 15:17:53.333 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 892 ms
+25-Nov-2018 15:19:15.287 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+25-Nov-2018 15:19:15.288 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+25-Nov-2018 15:19:15.288 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2018 15:19:15.344 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+25-Nov-2018 15:19:15.379 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2018 15:19:15.384 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+25-Nov-2018 15:19:15.384 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+25-Nov-2018 15:19:15.384 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2018 15:19:25.721 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.4
+25-Nov-2018 15:19:25.723 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 18 2018 19:42:17 UTC
+25-Nov-2018 15:19:25.724 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.4.0
+25-Nov-2018 15:19:25.724 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+25-Nov-2018 15:19:25.724 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.13.6
+25-Nov-2018 15:19:25.724 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+25-Nov-2018 15:19:25.724 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre
+25-Nov-2018 15:19:25.724 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_181-b13
+25-Nov-2018 15:19:25.724 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+25-Nov-2018 15:19:25.724 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/AnandKumar/Desktop/Study_Material/software/Tomcat9
+25-Nov-2018 15:19:25.725 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/AnandKumar/Desktop/Study_Material/software/Tomcat9
+25-Nov-2018 15:19:25.726 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/conf/logging.properties
+25-Nov-2018 15:19:25.726 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Nov-2018 15:19:25.726 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+25-Nov-2018 15:19:25.726 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Nov-2018 15:19:25.726 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+25-Nov-2018 15:19:25.727 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9
+25-Nov-2018 15:19:25.727 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9
+25-Nov-2018 15:19:25.727 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/temp
+25-Nov-2018 15:19:25.727 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/AnandKumar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+25-Nov-2018 15:19:25.883 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9090"]
+25-Nov-2018 15:19:25.908 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+25-Nov-2018 15:19:25.915 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2018 15:19:25.916 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+25-Nov-2018 15:19:25.917 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 714 ms
+25-Nov-2018 15:19:25.953 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Nov-2018 15:19:25.953 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.4
+25-Nov-2018 15:19:25.960 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/docs]
+25-Nov-2018 15:19:26.345 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/docs] has finished in [384] ms
+25-Nov-2018 15:19:26.346 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/manager]
+25-Nov-2018 15:19:26.400 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/manager] has finished in [55] ms
+25-Nov-2018 15:19:26.401 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/examples]
+25-Nov-2018 15:19:26.771 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/examples] has finished in [370] ms
+25-Nov-2018 15:19:26.771 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/ROOT]
+25-Nov-2018 15:19:26.794 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/ROOT] has finished in [22] ms
+25-Nov-2018 15:19:26.794 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/host-manager]
+25-Nov-2018 15:19:26.819 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/host-manager] has finished in [25] ms
+25-Nov-2018 15:19:26.822 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9090"]
+25-Nov-2018 15:19:26.830 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+25-Nov-2018 15:19:26.832 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 914 ms
+25-Nov-2018 15:20:24.701 INFO [http-nio-9090-exec-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/rest-ws-0.0.1-SNAPSHOT.war]
+25-Nov-2018 15:20:29.699 INFO [http-nio-9090-exec-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.6.RELEASE)
+
+2018-11-25 15:20:31.559  INFO 8498 --- [nio-9090-exec-1] com.rest.ws.DemoApplication              : Starting DemoApplication v0.0.1-SNAPSHOT on Anands-MacBook-Air.local with PID 8498 (/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/rest-ws-0.0.1-SNAPSHOT/WEB-INF/classes started by AnandKumar in /Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/bin)
+2018-11-25 15:20:31.567  INFO 8498 --- [nio-9090-exec-1] com.rest.ws.DemoApplication              : No active profile set, falling back to default profiles: default
+2018-11-25 15:20:31.653  INFO 8498 --- [nio-9090-exec-1] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@406851d2: startup date [Sun Nov 25 15:20:31 IST 2018]; root of context hierarchy
+2018-11-25 15:20:34.746  INFO 8498 --- [nio-9090-exec-1] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$71f24a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-25 15:20:34.880  INFO 8498 --- [nio-9090-exec-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3227 ms
+2018-11-25 15:20:35.583  INFO 8498 --- [nio-9090-exec-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-25 15:20:35.583  INFO 8498 --- [nio-9090-exec-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2018-11-25 15:20:35.584  INFO 8498 --- [nio-9090-exec-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-25 15:20:35.584  INFO 8498 --- [nio-9090-exec-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-25 15:20:35.584  INFO 8498 --- [nio-9090-exec-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-25 15:20:35.585  INFO 8498 --- [nio-9090-exec-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-11-25 15:20:35.585  INFO 8498 --- [nio-9090-exec-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-25 15:20:36.057  INFO 8498 --- [nio-9090-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+Sun Nov 25 15:20:36 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-11-25 15:20:36.449  INFO 8498 --- [nio-9090-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+Sun Nov 25 15:20:36 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:20:36 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:20:36 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:20:36 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:20:36 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:20:36 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:20:36 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:20:36 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:20:36 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-11-25 15:20:36.642  INFO 8498 --- [nio-9090-exec-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-11-25 15:20:36.724  INFO 8498 --- [nio-9090-exec-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-11-25 15:20:37.303  INFO 8498 --- [nio-9090-exec-1] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-11-25 15:20:37.310  INFO 8498 --- [nio-9090-exec-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-11-25 15:20:37.578  INFO 8498 --- [nio-9090-exec-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-11-25 15:20:37.866 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@27b0ddb9
+2018-11-25 15:20:37.867 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@27b0ddb9
+2018-11-25 15:20:37.867 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@27b0ddb9
+2018-11-25 15:20:37.874 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@54b3b52a
+2018-11-25 15:20:37.884 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@71810c4
+2018-11-25 15:20:37.889 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@70e64d7f
+2018-11-25 15:20:37.896 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@675eeacc
+2018-11-25 15:20:37.898 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@675eeacc
+2018-11-25 15:20:37.898 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@675eeacc
+2018-11-25 15:20:37.906 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@48bcf6da
+2018-11-25 15:20:37.906 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@48bcf6da
+2018-11-25 15:20:37.906 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@48bcf6da
+2018-11-25 15:20:37.914 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@4aaa0829
+2018-11-25 15:20:37.914 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@4aaa0829
+2018-11-25 15:20:37.914 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@4aaa0829
+2018-11-25 15:20:37.919 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@32992ee4
+2018-11-25 15:20:37.920 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@32992ee4
+2018-11-25 15:20:37.920 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@32992ee4
+2018-11-25 15:20:37.928 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@732ce3f1
+2018-11-25 15:20:37.929 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@732ce3f1
+2018-11-25 15:20:37.929 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@732ce3f1
+2018-11-25 15:20:37.944 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@7f06fea3
+2018-11-25 15:20:37.945 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@7f06fea3
+2018-11-25 15:20:37.945 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@7f06fea3
+2018-11-25 15:20:37.959 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@142c40ec
+2018-11-25 15:20:37.959 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@142c40ec
+2018-11-25 15:20:37.959 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@142c40ec
+2018-11-25 15:20:37.968 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@347407c
+2018-11-25 15:20:37.969 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@347407c
+2018-11-25 15:20:37.974 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@59179320
+2018-11-25 15:20:37.974 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@59179320
+2018-11-25 15:20:37.981 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@2de00ab1
+2018-11-25 15:20:37.981 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@2de00ab1
+2018-11-25 15:20:37.989 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@69bf8433
+2018-11-25 15:20:37.997 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@7b4f3a2e
+2018-11-25 15:20:38.004 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@3c4550a3
+2018-11-25 15:20:38.004 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@3c4550a3
+2018-11-25 15:20:38.009 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@2f91bee0
+2018-11-25 15:20:38.009 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@2f91bee0
+2018-11-25 15:20:38.017 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@1757c3b0
+2018-11-25 15:20:38.017 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@1757c3b0
+2018-11-25 15:20:38.021 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@1292f230
+2018-11-25 15:20:38.021 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@1292f230
+2018-11-25 15:20:38.032 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@266a51f6
+2018-11-25 15:20:38.032 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@266a51f6
+2018-11-25 15:20:38.038 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@12f7bfaf
+2018-11-25 15:20:38.038 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@12f7bfaf
+2018-11-25 15:20:38.041 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5d584943
+2018-11-25 15:20:38.041 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5d584943
+2018-11-25 15:20:38.044 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@5aae218b
+2018-11-25 15:20:38.045 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@5aae218b
+2018-11-25 15:20:38.047 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3e72a916
+2018-11-25 15:20:38.047 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3e72a916
+2018-11-25 15:20:38.051 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@33d48762
+2018-11-25 15:20:38.051 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@33d48762
+2018-11-25 15:20:38.055 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@38dfd669
+2018-11-25 15:20:38.055 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@38dfd669
+2018-11-25 15:20:38.059 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@2f76f6c
+2018-11-25 15:20:38.059 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@2f76f6c
+2018-11-25 15:20:38.059 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@2f76f6c
+2018-11-25 15:20:38.062 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@6bf97cef
+2018-11-25 15:20:38.064 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@a25b670
+2018-11-25 15:20:38.064 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@a25b670
+2018-11-25 15:20:38.064 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@a25b670
+2018-11-25 15:20:38.065 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@1f2157fa
+2018-11-25 15:20:38.069 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@5571e2f1
+2018-11-25 15:20:38.069 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@5571e2f1
+2018-11-25 15:20:38.070 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@67b82966
+2018-11-25 15:20:38.071 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@67b82966
+2018-11-25 15:20:38.072 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@1ab81cb2
+2018-11-25 15:20:38.072 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@1ab81cb2
+2018-11-25 15:20:38.074 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@44607edc
+2018-11-25 15:20:38.074 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@44607edc
+2018-11-25 15:20:38.080 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@129b4008
+2018-11-25 15:20:38.080 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@129b4008
+2018-11-25 15:20:38.081 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@6425c11d
+2018-11-25 15:20:38.083 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@4a04d9fd
+2018-11-25 15:20:38.083 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@4a04d9fd
+2018-11-25 15:20:38.083 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@4a04d9fd
+2018-11-25 15:20:38.088 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1443481c
+2018-11-25 15:20:38.088 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1443481c
+2018-11-25 15:20:38.088 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1443481c
+2018-11-25 15:20:38.090 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@334a2885
+2018-11-25 15:20:38.094 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@292b8163
+2018-11-25 15:20:38.096 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@7aff8319
+2018-11-25 15:20:38.096 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@7aff8319
+2018-11-25 15:20:38.096 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@7aff8319
+2018-11-25 15:20:38.100 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@7c59dcad
+2018-11-25 15:20:38.100 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@7c59dcad
+2018-11-25 15:20:38.100 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@7c59dcad
+2018-11-25 15:20:38.103 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@763ae917
+2018-11-25 15:20:38.108 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@2871e39a
+2018-11-25 15:20:38.120 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@6273b238
+2018-11-25 15:20:38.120 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@6273b238
+2018-11-25 15:20:38.121 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5abe14e3
+2018-11-25 15:20:38.132 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@7de8b5f1
+2018-11-25 15:20:38.132 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@7de8b5f1
+2018-11-25 15:20:38.142 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@796ca270
+2018-11-25 15:20:38.142 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@796ca270
+2018-11-25 15:20:38.143 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@104402c4
+2018-11-25 15:20:38.144 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@69ca3ef3
+2018-11-25 15:20:38.151 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@6b00b1ba
+2018-11-25 15:20:38.162 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@33967a
+2018-11-25 15:20:38.162 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@33967a
+2018-11-25 15:20:38.164 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@451dda4d
+2018-11-25 15:20:38.164 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@598104d2
+2018-11-25 15:20:38.164 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@3daa42b1
+2018-11-25 15:20:38.164 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@3c94f88c
+2018-11-25 15:20:38.164 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@177092e1
+2018-11-25 15:20:38.165 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@4606b349
+2018-11-25 15:20:38.165 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@2956cef2
+2018-11-25 15:20:38.165 DEBUG 8498 --- [nio-9090-exec-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@321d13cc
+2018-11-25 15:20:38.286  INFO 8498 --- [nio-9090-exec-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-11-25 15:20:40.748  INFO 8498 --- [nio-9090-exec-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-11-25 15:20:41.425 DEBUG 8498 --- [nio-9090-exec-1] o.h.stat.internal.StatisticsInitiator    : Statistics initialized [enabled=true]
+2018-11-25 15:20:41.453  INFO 8498 --- [nio-9090-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:20:41.458  INFO 8498 --- [nio-9090-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:20:41.601  INFO 8498 --- [nio-9090-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:20:41.701  INFO 8498 --- [nio-9090-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:20:41.778  INFO 8498 --- [nio-9090-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:20:41.787  INFO 8498 --- [nio-9090-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:20:42.035  INFO 8498 --- [nio-9090-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:20:42.036  INFO 8498 --- [nio-9090-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:20:43.208  INFO 8498 --- [nio-9090-exec-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43384460, org.springframework.security.web.context.SecurityContextPersistenceFilter@3107676e, org.springframework.security.web.header.HeaderWriterFilter@55c665b5, org.springframework.security.web.authentication.logout.LogoutFilter@67cfba8, com.rest.ws.security.AuthenticationFilter@2a708481, com.rest.ws.security.AuthorizationFilter@7ba080d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@111ec543, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29472da7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47db8c6f, org.springframework.security.web.session.SessionManagementFilter@48dc8906, org.springframework.security.web.access.ExceptionTranslationFilter@3a717354, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17c6cd06]
+2018-11-25 15:20:43.632  INFO 8498 --- [nio-9090-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-25 15:20:44.146  INFO 8498 --- [nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@406851d2: startup date [Sun Nov 25 15:20:31 IST 2018]; root of context hierarchy
+2018-11-25 15:20:44.289  WARN 8498 --- [nio-9090-exec-1] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-11-25 15:20:44.405  INFO 8498 --- [nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[POST],consumes=[application/xml || application/json],produces=[application/xml || application/json]}" onto public com.rest.ws.model.response.UserRespRest com.rest.ws.controller.UserController.createUser(com.rest.ws.model.request.UserDetailModel) throws java.lang.Exception
+2018-11-25 15:20:44.407  INFO 8498 --- [nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET],produces=[application/xml || application/json]}" onto public com.rest.ws.model.response.UserRespRest com.rest.ws.controller.UserController.getUser(java.lang.String)
+2018-11-25 15:20:44.407  INFO 8498 --- [nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[PUT],consumes=[application/xml || application/json],produces=[application/json || application/xml]}" onto public com.rest.ws.model.response.UserRespRest com.rest.ws.controller.UserController.updateUser(java.lang.String,com.rest.ws.model.request.UserDetailModel)
+2018-11-25 15:20:44.408  INFO 8498 --- [nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[DELETE]}" onto public java.lang.String com.rest.ws.controller.UserController.deleteUser(java.lang.String)
+2018-11-25 15:20:44.409  INFO 8498 --- [nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET],produces=[application/xml || application/json]}" onto public java.util.List<com.rest.ws.model.response.UserRespRest> com.rest.ws.controller.UserController.getUserWithPageAndLimit(int,int)
+2018-11-25 15:20:44.414  INFO 8498 --- [nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-25 15:20:44.415  INFO 8498 --- [nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-25 15:20:44.477  INFO 8498 --- [nio-9090-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-25 15:20:44.477  INFO 8498 --- [nio-9090-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-25 15:20:44.512  INFO 8498 --- [nio-9090-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in appExceptionHandler
+2018-11-25 15:20:45.159  INFO 8498 --- [nio-9090-exec-1] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-25 15:20:45.162  INFO 8498 --- [nio-9090-exec-1] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-25 15:20:45.173  INFO 8498 --- [nio-9090-exec-1] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-11-25 15:20:45.200  INFO 8498 --- [nio-9090-exec-1] com.rest.ws.DemoApplication              : Started DemoApplication in 14.931 seconds (JVM running for 80.308)
+25-Nov-2018 15:20:45.228 INFO [http-nio-9090-exec-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/rest-ws-0.0.1-SNAPSHOT.war] has finished in [20,526] ms
+2018-11-25 15:20:52.102  INFO 8498 --- [nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-25 15:20:52.152  INFO 8498 --- [nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 50 ms
+2018-11-25 15:20:52.355  INFO 8498 --- [nio-9090-exec-4] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:40:10.488  WARN 8498 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m3s908ms).
+2018-11-25 15:40:29.357  INFO 8498 --- [nio-9090-exec-8] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:40:59.517 ERROR 8498 --- [io-9090-exec-10] o.s.b.w.servlet.support.ErrorPageFilter  : Forwarding to error page from request [/rest-ws/users/3CtxIjMzsczNeiKrRFU5hG0Qbdiq03] due to exception [The request was rejected because the URL was not normalized.]
+
+org.springframework.security.web.firewall.RequestRejectedException: The request was rejected because the URL was not normalized.
+	at org.springframework.security.web.firewall.StrictHttpFirewall.getFirewalledRequest(StrictHttpFirewall.java:248) ~[spring-security-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:194) ~[spring-security-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.4]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.4]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.4]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.4]
+	at org.springframework.boot.web.servlet.support.ErrorPageFilter.doFilter(ErrorPageFilter.java:130) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.support.ErrorPageFilter.access$000(ErrorPageFilter.java:66) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.support.ErrorPageFilter$1.doFilterInternal(ErrorPageFilter.java:105) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.support.ErrorPageFilter.doFilter(ErrorPageFilter.java:123) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.4]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:9.0.4]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:9.0.4]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [catalina.jar:9.0.4]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [catalina.jar:9.0.4]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502) [catalina.jar:9.0.4]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:9.0.4]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [catalina.jar:9.0.4]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651) [catalina.jar:9.0.4]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:9.0.4]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [catalina.jar:9.0.4]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:417) [tomcat-coyote.jar:9.0.4]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:9.0.4]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754) [tomcat-coyote.jar:9.0.4]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376) [tomcat-coyote.jar:9.0.4]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.4]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.4]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2018-11-25 15:40:59.582  INFO 8498 --- [io-9090-exec-10] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:41:07.524  INFO 8498 --- [nio-9090-exec-3] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:41:36.933  INFO 8498 --- [nio-9090-exec-7] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:42:13.570  INFO 8498 --- [nio-9090-exec-5] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:43:19.686  INFO 8498 --- [nio-9090-exec-1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@406851d2: startup date [Sun Nov 25 15:20:31 IST 2018]; root of context hierarchy
+2018-11-25 15:43:19.699  INFO 8498 --- [nio-9090-exec-1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-11-25 15:43:19.700  INFO 8498 --- [nio-9090-exec-1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-11-25 15:43:19.708  INFO 8498 --- [nio-9090-exec-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-11-25 15:43:19.786  INFO 8498 --- [nio-9090-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-11-25 15:43:19.808  INFO 8498 --- [nio-9090-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+25-Nov-2018 15:43:19.824 WARNING [http-nio-9090-exec-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [rest-ws-0.0.1-SNAPSHOT] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+25-Nov-2018 15:43:19.826 WARNING [http-nio-9090-exec-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [rest-ws-0.0.1-SNAPSHOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:64)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+25-Nov-2018 15:43:19.858 INFO [Abandoned connection cleanup thread] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1295)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:972)
+	at com.mysql.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:90)
+	at com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+25-Nov-2018 15:43:23.415 INFO [http-nio-9090-exec-8] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/rest-ws-0.0.1-SNAPSHOT]] after stop() had already been called. The second call will be ignored.
+25-Nov-2018 15:43:23.975 INFO [http-nio-9090-exec-8] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/rest-ws-0.0.1-SNAPSHOT]
+25-Nov-2018 15:44:40.575 INFO [http-nio-9090-exec-11] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/rest-ws.war]
+25-Nov-2018 15:44:46.129 INFO [http-nio-9090-exec-11] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.6.RELEASE)
+
+2018-11-25 15:44:47.885  INFO 8498 --- [io-9090-exec-11] com.rest.ws.DemoApplication              : Starting DemoApplication v0.0.1-SNAPSHOT on Anands-MacBook-Air.local with PID 8498 (/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/rest-ws/WEB-INF/classes started by AnandKumar in /Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/bin)
+2018-11-25 15:44:47.896  INFO 8498 --- [io-9090-exec-11] com.rest.ws.DemoApplication              : No active profile set, falling back to default profiles: default
+2018-11-25 15:44:48.022  INFO 8498 --- [io-9090-exec-11] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@54ff5f2a: startup date [Sun Nov 25 15:44:48 IST 2018]; root of context hierarchy
+2018-11-25 15:44:50.960  INFO 8498 --- [io-9090-exec-11] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$431a67ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-25 15:44:51.091  INFO 8498 --- [io-9090-exec-11] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3069 ms
+2018-11-25 15:44:51.699  INFO 8498 --- [io-9090-exec-11] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-25 15:44:51.700  INFO 8498 --- [io-9090-exec-11] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2018-11-25 15:44:51.700  INFO 8498 --- [io-9090-exec-11] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-25 15:44:51.700  INFO 8498 --- [io-9090-exec-11] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-25 15:44:51.700  INFO 8498 --- [io-9090-exec-11] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-25 15:44:51.701  INFO 8498 --- [io-9090-exec-11] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-11-25 15:44:51.701  INFO 8498 --- [io-9090-exec-11] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-25 15:44:52.181  INFO 8498 --- [io-9090-exec-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+Sun Nov 25 15:44:52 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-11-25 15:44:52.623  INFO 8498 --- [io-9090-exec-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+Sun Nov 25 15:44:52 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:44:52 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:44:52 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:44:52 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:44:52 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-11-25 15:44:52.752  INFO 8498 --- [io-9090-exec-11] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+Sun Nov 25 15:44:52 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:44:52 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:44:52 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:44:52 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-11-25 15:44:52.839  INFO 8498 --- [io-9090-exec-11] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-11-25 15:44:53.343  INFO 8498 --- [io-9090-exec-11] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-11-25 15:44:53.350  INFO 8498 --- [io-9090-exec-11] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-11-25 15:44:53.612  INFO 8498 --- [io-9090-exec-11] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-11-25 15:44:53.907 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@d28b253
+2018-11-25 15:44:53.908 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@d28b253
+2018-11-25 15:44:53.908 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@d28b253
+2018-11-25 15:44:53.915 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1ee9d3ac
+2018-11-25 15:44:53.924 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@70f47937
+2018-11-25 15:44:53.929 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@36a7499a
+2018-11-25 15:44:53.939 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@215efda9
+2018-11-25 15:44:53.939 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@215efda9
+2018-11-25 15:44:53.939 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@215efda9
+2018-11-25 15:44:53.950 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@c9a23d0
+2018-11-25 15:44:53.951 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@c9a23d0
+2018-11-25 15:44:53.951 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@c9a23d0
+2018-11-25 15:44:53.959 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@24f61d04
+2018-11-25 15:44:53.960 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@24f61d04
+2018-11-25 15:44:53.960 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@24f61d04
+2018-11-25 15:44:53.963 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@11dabc31
+2018-11-25 15:44:53.964 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@11dabc31
+2018-11-25 15:44:53.964 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@11dabc31
+2018-11-25 15:44:53.972 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@59550e5a
+2018-11-25 15:44:53.973 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@59550e5a
+2018-11-25 15:44:53.973 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@59550e5a
+2018-11-25 15:44:53.986 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@102a6b6e
+2018-11-25 15:44:53.987 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@102a6b6e
+2018-11-25 15:44:53.987 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@102a6b6e
+2018-11-25 15:44:53.999 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@1b09a9d1
+2018-11-25 15:44:54.000 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@1b09a9d1
+2018-11-25 15:44:54.000 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1b09a9d1
+2018-11-25 15:44:54.010 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@4efbe563
+2018-11-25 15:44:54.010 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@4efbe563
+2018-11-25 15:44:54.016 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@2819c445
+2018-11-25 15:44:54.016 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@2819c445
+2018-11-25 15:44:54.023 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@4ce743ce
+2018-11-25 15:44:54.024 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@4ce743ce
+2018-11-25 15:44:54.031 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@58a3f5f9
+2018-11-25 15:44:54.038 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@16404fcc
+2018-11-25 15:44:54.044 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@4a0f51b9
+2018-11-25 15:44:54.044 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@4a0f51b9
+2018-11-25 15:44:54.051 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@7a1ab840
+2018-11-25 15:44:54.051 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@7a1ab840
+2018-11-25 15:44:54.060 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@13bf5528
+2018-11-25 15:44:54.060 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@13bf5528
+2018-11-25 15:44:54.064 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@367e85ef
+2018-11-25 15:44:54.064 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@367e85ef
+2018-11-25 15:44:54.070 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@578f5cc7
+2018-11-25 15:44:54.071 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@578f5cc7
+2018-11-25 15:44:54.075 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@32a84388
+2018-11-25 15:44:54.076 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@32a84388
+2018-11-25 15:44:54.080 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@560a9509
+2018-11-25 15:44:54.080 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@560a9509
+2018-11-25 15:44:54.082 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@2c7f2335
+2018-11-25 15:44:54.082 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@2c7f2335
+2018-11-25 15:44:54.084 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@31aca27
+2018-11-25 15:44:54.084 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@31aca27
+2018-11-25 15:44:54.087 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@1cf3152f
+2018-11-25 15:44:54.087 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@1cf3152f
+2018-11-25 15:44:54.091 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@1576f3da
+2018-11-25 15:44:54.091 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@1576f3da
+2018-11-25 15:44:54.096 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@df6753c
+2018-11-25 15:44:54.096 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@df6753c
+2018-11-25 15:44:54.096 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@df6753c
+2018-11-25 15:44:54.098 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@74f92404
+2018-11-25 15:44:54.101 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@538c9dec
+2018-11-25 15:44:54.102 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@538c9dec
+2018-11-25 15:44:54.102 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@538c9dec
+2018-11-25 15:44:54.104 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@44516842
+2018-11-25 15:44:54.107 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@17c1ee82
+2018-11-25 15:44:54.108 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@17c1ee82
+2018-11-25 15:44:54.110 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@44d005b9
+2018-11-25 15:44:54.110 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@44d005b9
+2018-11-25 15:44:54.112 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@57b8f569
+2018-11-25 15:44:54.112 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@57b8f569
+2018-11-25 15:44:54.113 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@6d6ebcdb
+2018-11-25 15:44:54.114 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@6d6ebcdb
+2018-11-25 15:44:54.118 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@4e69502a
+2018-11-25 15:44:54.119 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@4e69502a
+2018-11-25 15:44:54.119 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@214aee9
+2018-11-25 15:44:54.122 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@652955ac
+2018-11-25 15:44:54.122 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@652955ac
+2018-11-25 15:44:54.122 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@652955ac
+2018-11-25 15:44:54.127 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4e9184e7
+2018-11-25 15:44:54.127 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4e9184e7
+2018-11-25 15:44:54.127 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4e9184e7
+2018-11-25 15:44:54.130 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@64a5ad97
+2018-11-25 15:44:54.133 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@676cc051
+2018-11-25 15:44:54.135 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@222fbf10
+2018-11-25 15:44:54.136 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@222fbf10
+2018-11-25 15:44:54.136 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@222fbf10
+2018-11-25 15:44:54.139 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@6a099b6a
+2018-11-25 15:44:54.139 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@6a099b6a
+2018-11-25 15:44:54.140 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@6a099b6a
+2018-11-25 15:44:54.141 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@58e3338d
+2018-11-25 15:44:54.145 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@7b2aec83
+2018-11-25 15:44:54.155 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@7b0a817c
+2018-11-25 15:44:54.155 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@7b0a817c
+2018-11-25 15:44:54.156 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@44464849
+2018-11-25 15:44:54.167 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@680f92ab
+2018-11-25 15:44:54.167 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@680f92ab
+2018-11-25 15:44:54.176 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@6cd7c1c6
+2018-11-25 15:44:54.176 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@6cd7c1c6
+2018-11-25 15:44:54.177 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@27a3874e
+2018-11-25 15:44:54.178 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@5a6d5bd4
+2018-11-25 15:44:54.183 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@7a41fbb6
+2018-11-25 15:44:54.190 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@28154ef
+2018-11-25 15:44:54.190 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@28154ef
+2018-11-25 15:44:54.191 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@5bf4eee4
+2018-11-25 15:44:54.191 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@535aef59
+2018-11-25 15:44:54.191 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@52805c84
+2018-11-25 15:44:54.191 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@69834350
+2018-11-25 15:44:54.191 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@15fc134a
+2018-11-25 15:44:54.192 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@11d8168b
+2018-11-25 15:44:54.192 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@41ec0c48
+2018-11-25 15:44:54.192 DEBUG 8498 --- [io-9090-exec-11] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@32865ee6
+2018-11-25 15:44:54.313  INFO 8498 --- [io-9090-exec-11] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-11-25 15:44:56.670  INFO 8498 --- [io-9090-exec-11] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-11-25 15:44:57.153 DEBUG 8498 --- [io-9090-exec-11] o.h.stat.internal.StatisticsInitiator    : Statistics initialized [enabled=true]
+2018-11-25 15:44:57.181  INFO 8498 --- [io-9090-exec-11] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:44:57.186  INFO 8498 --- [io-9090-exec-11] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:44:57.308  INFO 8498 --- [io-9090-exec-11] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:44:57.393  INFO 8498 --- [io-9090-exec-11] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:44:57.458  INFO 8498 --- [io-9090-exec-11] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:44:57.464  INFO 8498 --- [io-9090-exec-11] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:44:57.650  INFO 8498 --- [io-9090-exec-11] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:44:57.651  INFO 8498 --- [io-9090-exec-11] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:44:58.948  INFO 8498 --- [io-9090-exec-11] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@734ed698, org.springframework.security.web.context.SecurityContextPersistenceFilter@324f40fc, org.springframework.security.web.header.HeaderWriterFilter@bafd781, org.springframework.security.web.authentication.logout.LogoutFilter@677afde3, com.rest.ws.security.AuthenticationFilter@31ac4cdb, com.rest.ws.security.AuthorizationFilter@5499bd94, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d216bc5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f767b43, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@110406aa, org.springframework.security.web.session.SessionManagementFilter@56aba8cc, org.springframework.security.web.access.ExceptionTranslationFilter@4a3c9dee, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@681aa097]
+2018-11-25 15:44:59.349  INFO 8498 --- [io-9090-exec-11] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-25 15:44:59.824  INFO 8498 --- [io-9090-exec-11] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@54ff5f2a: startup date [Sun Nov 25 15:44:48 IST 2018]; root of context hierarchy
+2018-11-25 15:44:59.964  WARN 8498 --- [io-9090-exec-11] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-11-25 15:45:00.072  INFO 8498 --- [io-9090-exec-11] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[POST],consumes=[application/xml || application/json],produces=[application/xml || application/json]}" onto public com.rest.ws.model.response.UserRespRest com.rest.ws.controller.UserController.createUser(com.rest.ws.model.request.UserDetailModel) throws java.lang.Exception
+2018-11-25 15:45:00.073  INFO 8498 --- [io-9090-exec-11] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET],produces=[application/xml || application/json]}" onto public com.rest.ws.model.response.UserRespRest com.rest.ws.controller.UserController.getUser(java.lang.String)
+2018-11-25 15:45:00.075  INFO 8498 --- [io-9090-exec-11] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[PUT],consumes=[application/xml || application/json],produces=[application/json || application/xml]}" onto public com.rest.ws.model.response.UserRespRest com.rest.ws.controller.UserController.updateUser(java.lang.String,com.rest.ws.model.request.UserDetailModel)
+2018-11-25 15:45:00.076  INFO 8498 --- [io-9090-exec-11] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[DELETE]}" onto public java.lang.String com.rest.ws.controller.UserController.deleteUser(java.lang.String)
+2018-11-25 15:45:00.077  INFO 8498 --- [io-9090-exec-11] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET],produces=[application/xml || application/json]}" onto public java.util.List<com.rest.ws.model.response.UserRespRest> com.rest.ws.controller.UserController.getUserWithPageAndLimit(int,int)
+2018-11-25 15:45:00.086  INFO 8498 --- [io-9090-exec-11] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-25 15:45:00.086  INFO 8498 --- [io-9090-exec-11] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-25 15:45:00.147  INFO 8498 --- [io-9090-exec-11] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-25 15:45:00.147  INFO 8498 --- [io-9090-exec-11] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-25 15:45:00.181  INFO 8498 --- [io-9090-exec-11] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in appExceptionHandler
+2018-11-25 15:45:00.793  INFO 8498 --- [io-9090-exec-11] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-11-25 15:45:00.796  INFO 8498 --- [io-9090-exec-11] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-25 15:45:00.805  INFO 8498 --- [io-9090-exec-11] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-11-25 15:45:00.824  INFO 8498 --- [io-9090-exec-11] com.rest.ws.DemoApplication              : Started DemoApplication in 14.141 seconds (JVM running for 601.976)
+25-Nov-2018 15:45:00.852 INFO [http-nio-9090-exec-11] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/AnandKumar/Desktop/Study_Material/software/Tomcat9/webapps/rest-ws.war] has finished in [20,277] ms
+2018-11-25 15:45:17.697  INFO 8498 --- [io-9090-exec-14] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-25 15:45:17.764  INFO 8498 --- [io-9090-exec-14] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 64 ms
+2018-11-25 15:45:18.527  INFO 8498 --- [io-9090-exec-14] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: 
+    select
+        userentity0_.id as id1_0_,
+        userentity0_.email as email2_0_,
+        userentity0_.email_verification_status as email_ve3_0_,
+        userentity0_.email_verification_token as email_ve4_0_,
+        userentity0_.encrypted_password as encrypte5_0_,
+        userentity0_.first_name as first_na6_0_,
+        userentity0_.last_name as last_nam7_0_,
+        userentity0_.user_id as user_id8_0_ 
+    from
+        users userentity0_ 
+    where
+        userentity0_.email=?
+2018-11-25 15:45:19.215 DEBUG 8498 --- [io-9090-exec-14] o.h.s.internal.ConcurrentStatisticsImpl  : HHH000117: HQL: select generatedAlias0 from users as generatedAlias0 where generatedAlias0.email=:param0, time: 161ms, rows: 1
+2018-11-25 15:45:19.365  WARN 8498 --- [io-9090-exec-14] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: User Already Exist]
+2018-11-25 15:45:19.365  INFO 8498 --- [io-9090-exec-14] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    932043 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    39933651 nanoseconds spent preparing 1 JDBC statements;
+    11782720 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-11-25 15:55:21.819  WARN 8498 --- [l-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Retrograde clock change detected (housekeeper delta=29s38ms), soft-evicting connections from pool.
+Sun Nov 25 15:55:21 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:55:21 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:55:21 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:55:21 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:55:21 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:55:21 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:55:21 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:55:21 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:55:21 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 25 15:55:21 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-11-26 08:26:17.032  WARN 8498 --- [l-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16h3m55s29ms).
+Mon Nov 26 08:28:03 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Nov 26 08:28:07 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Nov 26 08:28:09 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Nov 26 08:28:20 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Nov 26 08:28:25 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Nov 26 08:28:37 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Nov 26 08:28:39 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Nov 26 08:28:42 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Nov 26 08:28:43 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Nov 26 08:28:43 IST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:int="http://www.springframework.org/schema/integration"
+    xsi:schemaLocation="http://www.springframework.org/schema/integration                   
+                            http://www.springframework.org/schema/integration/spring-integration.xsd
+                            http://www.springframework.org/schema/beans 
+                            http://www.springframework.org/schema/beans/spring-beans.xsd">
+<int:channel id="inputChannel"/>
+<int:channel id="messageOutputChannel"/>
+
+<int:gateway service-interface="com.spring.integration.CustomGateway" default-request-channel="inputChannel" >
+	<int:method name="test"/>
+</int:gateway>
+
+<int:service-activator input-channel="inputChannel" method="returnInputMsz" ref="printService" output-channel="messageOutputChannel" />
+
+<bean id="printService" class="com.spring.integration.PrintService"/>
+</beans>

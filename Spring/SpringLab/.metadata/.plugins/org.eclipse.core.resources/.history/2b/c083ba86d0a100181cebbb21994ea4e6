@@ -1,0 +1,10 @@
+package com.spring.service;
+
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
+
+
+public class SecurityService {
+	public void verifyUser() {
+		System.out.println(" SS - verifyUser");
+	}
+}

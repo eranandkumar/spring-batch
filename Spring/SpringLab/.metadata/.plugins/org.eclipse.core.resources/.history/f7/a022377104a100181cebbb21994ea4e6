@@ -1,0 +1,18 @@
+package com.spring.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.spring.service.AccountService;
+import com.spring.service.CustomerService;
+
+public class AopLab1Main {
+	public static void main(String[] args) {
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("SpringContext.xml");
+		System.out.println("***** - Using Target Object-*****");
+		CustomerService cst = (CustomerService)ctx.getBean("csTarget");
+		cst.addCustomer();
+		cst.updateCustomer();
+		AccountService ast = (AccountService)ctx.getBean("asTarget");
+	}
+}

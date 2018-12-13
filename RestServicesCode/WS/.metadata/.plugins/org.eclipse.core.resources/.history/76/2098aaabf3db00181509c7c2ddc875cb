@@ -1,0 +1,27 @@
+package com.rest.ws.io.entity;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity(name="users")
+public class UserEntity implements Serializable{
+
+	private static final long serialVersionUID = -4913436844112861146L;
+	@Id
+	@GeneratedValue
+	private long id;
+	@Column(nullable=false)
+	private String userId;
+	private String firstName;
+	private String lastName;
+	private String email;
+	private String password;
+	private String encryptedPassword;
+	private String emailVerificationToken;
+	private Boolean emailVerificationStatus;
+	
+}

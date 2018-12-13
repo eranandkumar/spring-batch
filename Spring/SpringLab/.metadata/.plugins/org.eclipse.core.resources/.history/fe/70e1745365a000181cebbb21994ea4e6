@@ -1,0 +1,23 @@
+package com.spring.service;
+
+public class AccountService {
+
+	public void getBal() {
+		System.out.print("getBal - begin");
+		System.out.print("getBal - done");
+		System.out.print("getBal - end");
+	}
+	
+	public void myDeposit() {
+		System.out.print("myDeposit - begin");
+		System.out.print("myDeposit - done");
+		System.out.print("myDeposit - end");
+	}
+	
+	public void myWithdraw() throws Exception{
+		System.out.println("withdraw - begin()");
+		if(1 == 1) {
+			throw new InsufficientFundsException();
+		}
+	}
+}
