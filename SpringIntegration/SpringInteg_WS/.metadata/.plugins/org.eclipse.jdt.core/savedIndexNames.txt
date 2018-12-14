@@ -1,5 +1,0 @@
-INDEX VERSION 1.130+/Users/AnandKumar/Desktop/Study_Material/SpringIntegration/SpringInteg_WS/.metadata/.plugins/org.eclipse.jdt.core
-2251848823.index
-2989973026.index
-4254337726.index
-1872761994.index

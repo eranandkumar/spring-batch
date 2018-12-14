@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy>
-    <typeInfo handle="=SpringMVCExample/src\/main\/java&lt;com.springmvc.dao{UserDao.java[UserDao" modifiers="513" timestamp="1524380587000"/>
-    <typeInfo handle="=SpringMVCExample/src\/main\/java&lt;com.springmvc.service{UserService.java[UserService" modifiers="513" timestamp="1524382333000"/>
-    <typeInfo handle="=SpringMVCExample/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_161.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.nio.file.attribute(UserPrincipal.class[UserPrincipal" modifiers="1537" timestamp="1513730554000"/>
-    <typeInfo handle="=SpringMVCExample/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_161.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.lang(String.class[String" modifiers="49" timestamp="1513730554000"/>
-    <typeInfo handle="=SpringHiberante/src\/main\/java&lt;com.anand.springmvc.service{EmployeeService.java[EmployeeService" modifiers="513" timestamp="1524917097000"/>
-</typeInfoHistroy>

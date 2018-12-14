@@ -1,5 +1,0 @@
-package com.rest.ws.io.entity;
-
-public class UserEntity {
-
-}

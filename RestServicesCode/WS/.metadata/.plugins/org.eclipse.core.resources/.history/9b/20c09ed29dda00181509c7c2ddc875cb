@@ -1,5 +1,0 @@
-package com.rest.ws.shared.dto;
-
-public class UserDto {
-
-}

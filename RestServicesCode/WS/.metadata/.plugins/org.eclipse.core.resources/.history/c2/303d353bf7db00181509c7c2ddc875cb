@@ -1,9 +1,0 @@
-package com.rest.ws.repository;
-
-import org.springframework.data.repository.CrudRepository;
-
-import com.rest.ws.io.entity.UserEntity;
-
-public interface UserRepository extends CrudRepository<UserEntity, Long> {
-
-}

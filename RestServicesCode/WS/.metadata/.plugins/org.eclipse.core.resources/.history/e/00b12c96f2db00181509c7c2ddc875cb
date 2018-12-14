@@ -1,9 +1,0 @@
-package com.rest.ws.io.entity;
-
-import java.io.Serializable;
-
-public class UserEntity implements Serializable{
-
-	private static final long serialVersionUID = -4913436844112861146L;
-
-}

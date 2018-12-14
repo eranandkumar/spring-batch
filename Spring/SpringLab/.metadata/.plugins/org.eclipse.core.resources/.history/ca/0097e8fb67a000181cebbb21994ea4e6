@@ -1,7 +1,0 @@
-package com.spring.service;
-
-public class TxService {
-	public void begin() {
-		System.out.println("***** TS - begin *******");
-	}
-}

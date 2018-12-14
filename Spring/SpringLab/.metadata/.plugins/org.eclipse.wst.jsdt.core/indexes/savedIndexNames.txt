@@ -1,1 +1,0 @@
-INDEX VERSION 1.4+/Users/AnandKumar/Desktop/Study_Material/Spring/SpringLab/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes

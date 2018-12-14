@@ -1,8 +1,0 @@
-package com.spring.service;
-
-public class LogService {
-	
-	public void logBefore() {
-		System.out.println(" << LS - logBefore");
-	}
-}
