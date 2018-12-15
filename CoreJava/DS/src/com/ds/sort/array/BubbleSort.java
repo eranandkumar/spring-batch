@@ -6,9 +6,9 @@ public class BubbleSort {
 
         System.out.println("Unsorted Array");
         Utility.printArray(array);
-        System.out.println("--------------------------");
+        System.out.println("**********************************");
 
-        for (int unsortedindex = array.length -1; unsortedindex >=0; unsortedindex--){
+        for (int unsortedindex = array.length -1; unsortedindex > 0; unsortedindex--){
             for (int i=0; i<unsortedindex; i++){
                 if (array[i] > array[i+1]) {
                     Utility.swap(array, i, i + 1);
