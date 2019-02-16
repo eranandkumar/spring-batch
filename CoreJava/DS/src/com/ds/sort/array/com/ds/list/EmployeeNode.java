@@ -6,6 +6,7 @@ public class EmployeeNode {
     private Employee employee;
     private EmployeeNode next;
 
+
     public EmployeeNode( Employee employee){
         this.employee = employee;
     }
@@ -24,5 +25,10 @@ public class EmployeeNode {
 
     public void setNext(EmployeeNode next) {
         this.next = next;
+    }
+
+    @Override
+    public String toString() {
+        return employee.toString ();
     }
 }
