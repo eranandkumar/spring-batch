@@ -1,4 +1,4 @@
-package com.ds.sort.array.com.ds.list.ListUtil;
+package com.ds.list.ListUtil;
 
 import java.util.Objects;
 

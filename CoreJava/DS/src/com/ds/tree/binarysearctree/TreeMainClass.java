@@ -1,4 +1,4 @@
-package com.ds.sort.array.com.ds.tree.binarysearchtree;
+package com.ds.tree.binarysearctree;
 
 public class TreeMainClass {
     public static void main(String[] args) {

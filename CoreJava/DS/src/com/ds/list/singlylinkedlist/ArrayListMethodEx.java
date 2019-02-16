@@ -1,6 +1,6 @@
-package com.ds.sort.array.com.ds.list;
+package com.ds.list.singlylinkedlist;
 
-import com.ds.sort.array.com.ds.list.ListUtil.Employee;
+import com.ds.list.ListUtil.Employee;
 
 import java.util.ArrayList;
 import java.util.List;
