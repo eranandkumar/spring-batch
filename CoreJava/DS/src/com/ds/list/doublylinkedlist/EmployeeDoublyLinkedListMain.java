@@ -14,5 +14,15 @@ public class EmployeeDoublyLinkedListMain {
         employeeLinkedList.addToFront ( new Employee ( 5, "Aman", "Akash" ) );
 
         employeeLinkedList.printDoublyLinkedList ();
+        System.out.println ("******************************************************************");
+
+        //employeeLinkedList.addToEnd ( new Employee ( 1, "Anand", "Kumar" )  );
+        //employeeLinkedList.addToEnd ( new Employee ( 2, "Vivek", "ranjan" ) );
+        //employeeLinkedList.addToEnd ( new Employee ( 3, "saurav", "kumar" ) );
+        //employeeLinkedList.addToEnd ( new Employee ( 4, "mukesh", "kumar" ) );
+        //employeeLinkedList.addToEnd ( new Employee ( 5, "Aman", "Akash" ) );
+
+        employeeLinkedList.printDoublyLinkedList ();
+
     }
 }

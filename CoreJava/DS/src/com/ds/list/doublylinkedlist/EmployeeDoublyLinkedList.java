@@ -25,10 +25,25 @@ public class EmployeeDoublyLinkedList {
           tail = tempNode;
       }else {
           head.setPreviousLink ( tempNode );
+          tempNode.setNextLink ( head );
       }
 
-      tempNode.setNextLink ( head );
+
       head = tempNode;
+      size++;
+  }
+
+  public void addToEnd(Employee data){
+      EmployeeDoublyNode tempNode = new EmployeeDoublyNode ( data );
+      if (isEmpty ()){
+          head = tempNode;
+      }else {
+          tail.setNextLink ( tempNode );
+          tempNode.setPreviousLink ( tail );
+      }
+
+     tail = tempNode;
+      size++;
   }
 
   public void printDoublyLinkedList(){
@@ -47,5 +62,9 @@ public class EmployeeDoublyLinkedList {
 
   public  boolean isEmpty(){
       return head == null;
+  }
+
+  public int sizeOfDoublyLinkedList(){
+      return size;
   }
 }
