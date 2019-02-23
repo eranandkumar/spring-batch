@@ -13,6 +13,6 @@ public class EmployeeDoublyLinkedListMain {
         employeeLinkedList.addToFront ( new Employee ( 4, "mukesh", "kumar" ) );
         employeeLinkedList.addToFront ( new Employee ( 5, "Aman", "Akash" ) );
 
-
+        employeeLinkedList.printDoublyLinkedList ();
     }
 }
