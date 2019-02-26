@@ -46,6 +46,24 @@ public class EmployeeDoublyLinkedList {
       size++;
   }
 
+  public Employee removeFromFront(){
+      EmployeeDoublyNode temp = head;
+      if (isEmpty ()){
+          return null;
+      }
+      //When Doubly Linked List Contain Only one Item
+      if (head == tail) {
+          tail = null;
+      }else {
+          head.getNextLink ().setPreviousLink ( null );
+      }
+
+      head = head.getNextLink ();
+      temp.setNextLink ( null );
+      return temp.getData ();
+  }
+
+
   public void printDoublyLinkedList(){
       if (isEmpty ()){
           return;
